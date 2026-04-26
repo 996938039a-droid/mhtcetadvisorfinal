@@ -1,0 +1,166 @@
+categories:
+  OPEN: "General / Open"
+  SC: "Scheduled Caste (SC)"
+  ST: "Scheduled Tribe (ST)"
+  VJ: "Vimukta Jati / DT (VJ/DT)"
+  NT1: "Nomadic Tribe B (NT-B)"
+  NT2: "Nomadic Tribe C (NT-C)"
+  NT3: "Nomadic Tribe D (NT-D)"
+  OBC: "Other Backward Class (OBC)"
+  SEBC: "SEBC"
+  EWS: "Economically Weaker Section (EWS)"
+
+# Maps base category + gender to cutoff column prefix in the data
+# Pattern: G=General/Male, L=Ladies/Female
+# Suffix: S=State Level, H=Home University, O=Other Than HU
+category_col_map:
+  OPEN:
+    male: "GOPEN"
+    female: "LOPEN"
+  SC:
+    male: "GSC"
+    female: "LSC"
+  ST:
+    male: "GST"
+    female: "LST"
+  VJ:
+    male: "GVJ"
+    female: "LVJ"
+  NT1:
+    male: "GNT1"
+    female: "LNT1"
+  NT2:
+    male: "GNT2"
+    female: "LNT2"
+  NT3:
+    male: "GNT3"
+    female: "LNT3"
+  OBC:
+    male: "GOBC"
+    female: "LOBC"
+  SEBC:
+    male: "GSEBC"
+    female: "LSEBC"
+  EWS:
+    male: "EWS"
+    female: "EWS"
+
+special_quotas:
+  TFWS: "Tuition Fee Waiver Scheme (TFWS)"
+  DEF: "Defence"
+  PWD: "Persons with Disability"
+  ORPHAN: "Orphan"
+
+college_types:
+  - "Government"
+  - "Government Autonomous"
+  - "Government-Aided"
+  - "Government-Aided Autonomous"
+  - "Un-Aided"
+  - "Un-Aided Autonomous"
+  - "University Department"
+  - "University Managed"
+  - "University Managed Autonomous"
+  - "Deemed University Autonomous"
+
+# Maharashtra Districts mapped to Home Universities
+district_university_map:
+  # Mumbai University
+  Mumbai: "Mumbai University"
+  "Mumbai Suburban": "Mumbai University"
+  Thane: "Mumbai University"
+  Raigad: "Mumbai University"
+  Palghar: "Mumbai University"
+  # Pune University
+  Pune: "Savitribai Phule Pune University"
+  Ahmednagar: "Savitribai Phule Pune University"
+  Nashik: "Savitribai Phule Pune University"
+  # Nagpur University
+  Nagpur: "Rashtrasant Tukadoji Maharaj Nagpur University"
+  Chandrapur: "Rashtrasant Tukadoji Maharaj Nagpur University"
+  Wardha: "Rashtrasant Tukadoji Maharaj Nagpur University"
+  Bhandara: "Rashtrasant Tukadoji Maharaj Nagpur University"
+  Gondia: "Gondwana University"
+  Gadchiroli: "Gondwana University"
+  # Marathwada University (BAMU)
+  Aurangabad: "Dr. Babasaheb Ambedkar Marathwada University"
+  Jalna: "Dr. Babasaheb Ambedkar Marathwada University"
+  Beed: "Dr. Babasaheb Ambedkar Marathwada University"
+  Osmanabad: "Swami Ramanand Teerth Marathwada University"
+  Latur: "Swami Ramanand Teerth Marathwada University"
+  Nanded: "Swami Ramanand Teerth Marathwada University"
+  Parbhani: "Swami Ramanand Teerth Marathwada University"
+  Hingoli: "Swami Ramanand Teerth Marathwada University"
+  # Shivaji University
+  Kolhapur: "Shivaji University"
+  Sangli: "Shivaji University"
+  Satara: "Shivaji University"
+  # Amravati University
+  Amravati: "Sant Gadge Baba Amravati University"
+  Akola: "Sant Gadge Baba Amravati University"
+  Buldhana: "Sant Gadge Baba Amravati University"
+  Washim: "Sant Gadge Baba Amravati University"
+  Yavatmal: "Sant Gadge Baba Amravati University"
+  # North Maharashtra University
+  Jalgaon: "North Maharashtra University"
+  Dhule: "North Maharashtra University"
+  Nandurbar: "North Maharashtra University"
+  # Solapur University
+  Solapur: "Solapur University"
+
+universities:
+  - "Mumbai University"
+  - "Savitribai Phule Pune University"
+  - "Rashtrasant Tukadoji Maharaj Nagpur University"
+  - "Dr. Babasaheb Ambedkar Marathwada University"
+  - "Shivaji University"
+  - "Sant Gadge Baba Amravati University"
+  - "North Maharashtra University"
+  - "Solapur University"
+  - "Swami Ramanand Teerth Marathwada University"
+  - "Gondwana University"
+
+# University to college name keyword mapping (used to assign HU/OHU)
+university_college_keywords:
+  "Mumbai University": ["Mumbai", "Thane", "Raigad", "Palghar", "Navi Mumbai", "Kalyan", "Vasai"]
+  "Savitribai Phule Pune University": ["Pune", "Ahmednagar", "Nashik", "Pimpri", "Chinchwad", "Wakad"]
+  "Rashtrasant Tukadoji Maharaj Nagpur University": ["Nagpur", "Wardha", "Chandrapur", "Bhandara"]
+  "Dr. Babasaheb Ambedkar Marathwada University": ["Aurangabad", "Jalna", "Beed", "Chhatrapati"]
+  "Shivaji University": ["Kolhapur", "Sangli", "Satara"]
+  "Sant Gadge Baba Amravati University": ["Amravati", "Akola", "Buldhana", "Yavatmal", "Washim", "Shegaon"]
+  "North Maharashtra University": ["Jalgaon", "Dhule", "Nandurbar"]
+  "Solapur University": ["Solapur"]
+  "Swami Ramanand Teerth Marathwada University": ["Nanded", "Parbhani", "Hingoli", "Latur", "Osmanabad"]
+  "Gondwana University": ["Gadchiroli", "Gondia"]
+
+cap_rounds:
+  - "CAP Round 1"
+  - "CAP Round 2"
+  - "CAP Round 3"
+
+classification:
+  reach:
+    label: "Reach"
+    color: "#EF4444"
+    range: [0, 10]
+    emoji: "🎯"
+  dream:
+    label: "Dream"
+    color: "#F97316"
+    range: [10, 30]
+    emoji: "⭐"
+  target:
+    label: "Target"
+    color: "#3B82F6"
+    range: [30, 70]
+    emoji: "✅"
+  safe:
+    label: "Safe"
+    color: "#22C55E"
+    range: [70, 90]
+    emoji: "🛡️"
+  assured:
+    label: "Assured"
+    color: "#6B7280"
+    range: [90, 100]
+    emoji: "🔒"
